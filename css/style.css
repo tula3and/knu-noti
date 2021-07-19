@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	max-width: 600px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "IM_Hyemin-Bold";
+	font-size: 40px;
+}
+
+#title {
+	font-size: 60px;
+}
+
+body {
+	text-align: center;
+}
+
+input {
+	border: 0;
+	outline: 0;
+	height: 30px;
+	font-family: "IM_Hyemin-Bold";
+	font-size: 20px;
+	background-color:#FF5A5F;
+	color: white;
+}
+
+#input-name {
+	width: 200px;
+	height: 28px;
+}
+
+#floatingLink {
+	position: fixed;
+	width: 200px;
+	height: 200px;
+	top: 250px;
+	background-color: #606060;
+	color: #fff;
+}
