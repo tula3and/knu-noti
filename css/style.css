@@ -41,6 +41,18 @@ input {
 	height: 28px;
 }
 
+#monthly li {
+	text-align: left;
+	font-size: 25px;
+	list-style: none;
+	padding-top: 10px;
+	padding-left: 100px;
+}
+
+.hidden {
+	display: none;
+}
+
 #floatingLink {
 	position: fixed;
 	width: 200px;
