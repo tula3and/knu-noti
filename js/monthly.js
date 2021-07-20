@@ -156,12 +156,16 @@ const monthlyPlan = [
     one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve
 ];
 
+const title = document.querySelector("#title");
 const monthlyList = document.querySelector("#monthly");
 const date = new Date();
+const year = date.getFullYear();
 const month = date.getMonth();
+const day = date.getDate();
 const nowMonthList = monthlyPlan[month];
 
-monthlyList.innerText = String(month + 1) + "월 주요 일정";
+title.innerText = String(month + 1) + "." + String(day) + ". " + "NOTI";
+monthlyList.firstElementChild.innerText = String(month + 1) + "월 주요 일정";
 
 function addPlan(item) {
     const li = document.createElement("li");
@@ -170,7 +174,15 @@ function addPlan(item) {
     monthlyList.appendChild(li);
 }
 
-nowMonthList.forEach(addPlan);
+if (year === 2021) {
+    nowMonthList.forEach(addPlan);
+}
+else {
+    const li = document.createElement("li");
+    const newPlan = "아직 업데이트가 되지 않았습니다 :(";
+    li.innerText = newPlan;
+    monthlyList.appendChild(li);
+}
 
 /*
 # codes for parsing

@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+html {
+	background: #43C6AC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 #main {
 	display: flex;
 	flex-direction: column;
@@ -20,33 +26,54 @@
 
 #title {
 	font-size: 60px;
+	background-color: #fff;
+}
+
+.title {
+	margin-top: 20px;
+	font-size: 45px;
+	background-color: #F8FFAE;
 }
 
 body {
 	text-align: center;
 }
 
+#user {
+	margin-top: 10px;
+	background-color: #fff;
+}
+
 input {
 	border: 0;
 	outline: 0;
-	height: 30px;
+	height: 44px;
 	font-family: "IM_Hyemin-Bold";
 	font-size: 20px;
-	background-color:#FF5A5F;
-	color: white;
+	background-color: green;
+	color: #fff;
+	margin-top: 10px;
 }
 
 #input-name {
-	width: 200px;
-	height: 28px;
+	width: 300px;
+	height: 42px;
+	background-color: #fff;
+	color: black;
 }
 
 #monthly li {
 	text-align: left;
 	font-size: 25px;
 	list-style: none;
-	padding-top: 10px;
-	padding-left: 100px;
+	margin-top: 10px;
+	margin-left: 100px;
+	background-color: #fff;
+}
+
+#monthly-title {
+	font-size: 60px;
+	background-color: #fff;
 }
 
 .hidden {
