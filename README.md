@@ -1,1 +1,1 @@
-# knu-noti
+# knu-noti 안뇽
