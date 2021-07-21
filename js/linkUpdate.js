@@ -5,6 +5,12 @@ const LINK = "link";
 let linkList = [];
 const listObj = {link:"", linkName:""};
 
+function linkLenCheck() {
+    if (linkList.length >= 3) {
+        updateButton.classList.add("hidden");
+    }
+}
+
 function saveLink() {
     localStorage.setItem(LINK, JSON.stringify(linkList));
 }
@@ -21,6 +27,7 @@ function addLink() {
     floatingIcon.appendChild(buttonLink);
     linkList.push({"linkName": newLinkName, "link": newLink});
     saveLink();
+    linkLenCheck();
 }
 
 function paintList(listObj) {
@@ -40,4 +47,5 @@ if (savedLink !== null) {
     const parsedLink = JSON.parse(savedLink);
     linkList = parsedLink;
     parsedLink.forEach(paintList);
+    linkLenCheck();
 }

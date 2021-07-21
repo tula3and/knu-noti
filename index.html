@@ -22,19 +22,22 @@
             <h1 class="title">n월 주요 일정</h1>
         </div>
     </section>
-    <div id="floatingLink">
+    <div class="hidden" id="floatingLink">
         <div id="linkStack">
             <a href="http://www.knu.ac.kr/wbbs/"><button>경북대학교</button></a>
+            <a href="http://lms.knu.ac.kr/ilos/main/main_form.acl"><button>LMS</button></a>
+            <a href="https://sugangpack.knu.ac.kr/SugangPack"><button>수강꾸러미</button></a>
+            <a href="http://sugang.knu.ac.kr/Sugang/"><button>수강 신청</button></a>
         </div>
         <button id="addButton">+</button>
     </div>
-    <div id="floatingTodo">
-        <h1>일정</h1>
+    <div class="hidden" id="floatingTodo">
+        <h1 class="todo-title">TODO</h1>
         <form id="todo-form">
-            <input type="text" placeholder="일정 입력 후 Enter" required />
+            <input id="input-todo" type="text" placeholder="Todo 입력 후 Enter" required />
         </form>
         <ul id="todo-list"></ul>
-        <p>완료</p>
+        <p class="todo-title">DONE</p>
         <ul id="complete-list" class = "checked"></ul>
     </div>
     <script src="js/login.js"></script>

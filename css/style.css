@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
 	background: #43C6AC;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
@@ -62,6 +69,48 @@ input {
 	color: black;
 }
 
+#input-todo {
+	width: 280px;
+	height: 42px;
+	background-color: #fff;
+	color: black;
+}
+
+.todo-title {
+	font-size: 25px;
+	margin-top: 15px;
+	margin-left: 35px;
+	font-family: "IM_Hyemin-Bold";
+	background-color: #fff;
+	width: 100px;
+}
+
+#todo-list li {
+	font-size: 16px;
+	font-family: 'ELAND_Choice_M';
+	text-align: left;
+	margin-left: 40px;
+	margin-top: 5px;
+}
+
+#complete-list li {
+	font-size: 16px;
+	font-family: 'ELAND_Choice_M';
+	text-align: left;
+	margin-left: 40px;
+	margin-top: 5px;
+}
+
+#todo-list li button{
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+#complete-list li button{
+	font-size: 12px;
+	margin-left: 5px;
+}
+
 #monthly li {
 	text-align: left;
 	font-size: 25px;
@@ -85,7 +134,7 @@ input {
 	margin-left: 30px;
 	position: fixed;
 	width: 300px;
-	height: 300px;
+	height: 305px;
 	top: 250px;
 	background-color: #43C6AC;
 	color: #fff;
@@ -129,7 +178,7 @@ input {
 	border-radius: 0px 80px 40px 80px;
 	position: fixed;
 	width: 350px;
-	height: 500px;
+	height: 600px;
     right: 30px;
 	bottom: 30px;
 	background-color: #F8FFAE;
