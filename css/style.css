@@ -81,10 +81,47 @@ input {
 }
 
 #floatingLink {
+	border-radius: 20px 40px 0px 80px;
+	margin-left: 30px;
 	position: fixed;
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 300px;
 	top: 250px;
-	background-color: #606060;
+	background-color: #43C6AC;
 	color: #fff;
 }
+
+#linkStack {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#addButton {
+	background: #F8FFAE;
+	font-size: 25px;
+	font-family: "IM_Hyemin-Bold";
+	border: none;
+	width: 30px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+#addButton:hover {
+	box-shadow:200px 0 0 0 rgba(0,0,0,0.3) inset;
+}
+
+#linkStack button {
+	background: #fff;
+	font-size: 25px;
+	font-family: "IM_Hyemin-Bold";
+	border: none;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+#linkStack button:hover {
+	box-shadow:200px 0 0 0 rgba(0,0,0,0.3) inset;
+}
+
